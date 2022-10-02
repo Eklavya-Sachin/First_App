@@ -12,7 +12,7 @@ Future main() async {
 
   runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Awesome App",
+      title: "First App",
       home: Constants.prefs.getBool("loggedIn") == true
           ? const HomePage()
           : const LoginPage(),

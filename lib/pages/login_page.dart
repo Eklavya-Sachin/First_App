@@ -57,14 +57,13 @@ class _LoginPageState extends State<LoginPage> {
                       const SizedBox(
                         height: 20,
                       ),
-                      RaisedButton(
+                      ElevatedButton(
                         onPressed: () {
                           // Navigator.push(context, MaterialPageRoute(builder: HomePage()))
                           Constants.prefs.setBool("loggedIn", true);
                           Navigator.pushReplacementNamed(context, "/home");
                         },
                         child: const Text("Sign In"),
-                        color: const Color.fromARGB(255, 195, 191, 191),
                       ),
                     ],
                   ),
